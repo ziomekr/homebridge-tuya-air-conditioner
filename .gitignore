@@ -121,3 +121,5 @@ dist
 
 .vscode/
 .github/
+
+tuya-local-server/volumes/server

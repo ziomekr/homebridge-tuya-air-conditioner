@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: tuya-local
+    working_dir: /app/data
+    volumes:
+      - ./volumes/server:/app/data
+    command: /app/run.sh
+    restart: unless-stopped
+    network_mode: "host"
+    stdin_open: true 
+    tty: true       
